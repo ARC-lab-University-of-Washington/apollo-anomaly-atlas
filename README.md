@@ -137,7 +137,7 @@ Please cite both the dataset and the paper.
 }
 ```
 
-Companion system: [**LODESTAR**](https://github.com/ARC-lab-University-of-Washington/lodestar) — an offline, on-device, citation-grounded fault-diagnosis assistant.
+Companion system: [**LODESTAR**](https://github.com/ARC-lab-University-of-Washington/lodestar-fdx.git) — an offline, on-device, citation-grounded fault-diagnosis assistant.
 
 <div align="center">
 <sub>ARC Lab · University of Washington</sub>
