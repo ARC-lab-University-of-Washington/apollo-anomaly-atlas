@@ -1,0 +1,179 @@
+section,key,value,denominator,pct,tag,note
+totals,segments_total,3370,3370,100.0,MEASURED,every record in corpus.json
+totals,segments_retrievable,3148,3370,93.41,MEASURED,survives lodestar_edge.retriever.is_boilerplate; this is the BM25-indexed set
+totals,segments_dropped_boilerplate,222,3370,6.59,MEASURED,"front matter / illustration+TOC lists / near-empty pages; archived, not deleted"
+totals,source_documents,22,,,MEASURED,distinct source_doc values; all Apollo 13 operational PDFs
+doc_type,malfunction_procedure,2819,3370,83.65,MEASURED,LABEL IS UNRELIABLE - see doc_type_label_audit rows
+doc_type_retrievable,malfunction_procedure,2675,2819,94.89,MEASURED,retrievable share within this doc_type
+doc_type_dropped,malfunction_procedure,144,2819,5.11,MEASURED,boilerplate share within this doc_type
+doc_type,anomaly_report,434,3370,12.88,MEASURED,LABEL IS UNRELIABLE - see doc_type_label_audit rows
+doc_type_retrievable,anomaly_report,365,434,84.1,MEASURED,retrievable share within this doc_type
+doc_type_dropped,anomaly_report,69,434,15.9,MEASURED,boilerplate share within this doc_type
+doc_type,flight_rule,117,3370,3.47,MEASURED,LABEL IS UNRELIABLE - see doc_type_label_audit rows
+doc_type_retrievable,flight_rule,108,117,92.31,MEASURED,retrievable share within this doc_type
+doc_type_dropped,flight_rule,9,117,7.69,MEASURED,boilerplate share within this doc_type
+doc_type_label_audit,malfunction_procedure <- default_fallthrough,2819,3370,83.65,MEASURED,how run_ingestion._doc_type assigned this label
+doc_type_label_audit,anomaly_report <- substring-ar,434,3370,12.88,MEASURED,how run_ingestion._doc_type assigned this label
+doc_type_label_audit,flight_rule <- keyword,117,3370,3.47,MEASURED,how run_ingestion._doc_type assigned this label
+source_doc,a13-lm-aoh-v1-lm7-subs-300ppi.pdf,789,3370,23.41,MEASURED,"doc_type=malfunction_procedure | class_suggested=systems_handbook (VERIFY: filename-derived, author to confirm)"
+source_doc_retrievable,a13-lm-aoh-v1-lm7-subs-300ppi.pdf,776,789,98.35,MEASURED,retrievable within this document
+source_doc_dropped,a13-lm-aoh-v1-lm7-subs-300ppi.pdf,13,789,1.65,MEASURED,boilerplate within this document
+source_doc,a13-crew-inflight-checklists.pdf,365,3370,10.83,MEASURED,"doc_type=malfunction_procedure | class_suggested=checklist (VERIFY: filename-derived, author to confirm)"
+source_doc_retrievable,a13-crew-inflight-checklists.pdf,354,365,96.99,MEASURED,retrievable within this document
+source_doc_dropped,a13-crew-inflight-checklists.pdf,11,365,3.01,MEASURED,boilerplate within this document
+source_doc,a13-flightplan-final-19700316.pdf,353,3370,10.47,MEASURED,"doc_type=malfunction_procedure | class_suggested=flight_plan (VERIFY: filename-derived, author to confirm)"
+source_doc_retrievable,a13-flightplan-final-19700316.pdf,329,353,93.2,MEASURED,retrievable within this document
+source_doc_dropped,a13-flightplan-final-19700316.pdf,24,353,6.8,MEASURED,boilerplate within this document
+source_doc,a13-post-retrieval-procs.pdf,272,3370,8.07,MEASURED,"doc_type=malfunction_procedure | class_suggested=procedure (VERIFY: filename-derived, author to confirm)"
+source_doc_retrievable,a13-post-retrieval-procs.pdf,256,272,94.12,MEASURED,retrievable within this document
+source_doc_dropped,a13-post-retrieval-procs.pdf,16,272,5.88,MEASURED,boilerplate within this document
+source_doc,a13-lunar-surface-proc.pdf,261,3370,7.74,MEASURED,"doc_type=anomaly_report | class_suggested=procedure (VERIFY: filename-derived, author to confirm)"
+source_doc_retrievable,a13-lunar-surface-proc.pdf,202,261,77.39,MEASURED,retrievable within this document
+source_doc_dropped,a13-lunar-surface-proc.pdf,59,261,22.61,MEASURED,boilerplate within this document
+source_doc,a13-saturn-v-flight-manual.pdf,238,3370,7.06,MEASURED,"doc_type=malfunction_procedure | class_suggested=systems_handbook (VERIFY: filename-derived, author to confirm)"
+source_doc_retrievable,a13-saturn-v-flight-manual.pdf,226,238,94.96,MEASURED,retrievable within this document
+source_doc_dropped,a13-saturn-v-flight-manual.pdf,12,238,5.04,MEASURED,boilerplate within this document
+source_doc,72-a13-csm-g-c-checklist.pdf,150,3370,4.45,MEASURED,"doc_type=malfunction_procedure | class_suggested=checklist (VERIFY: filename-derived, author to confirm)"
+source_doc_retrievable,72-a13-csm-g-c-checklist.pdf,141,150,94.0,MEASURED,retrievable within this document
+source_doc_dropped,72-a13-csm-g-c-checklist.pdf,9,150,6.0,MEASURED,boilerplate within this document
+source_doc,76-a13-g-n-dictionary.pdf,138,3370,4.09,MEASURED,"doc_type=anomaly_report | class_suggested=reference (VERIFY: filename-derived, author to confirm)"
+source_doc_retrievable,76-a13-g-n-dictionary.pdf,132,138,95.65,MEASURED,retrievable within this document
+source_doc_dropped,76-a13-g-n-dictionary.pdf,6,138,4.35,MEASURED,boilerplate within this document
+source_doc,70-a13-launch-checklist.pdf,120,3370,3.56,MEASURED,"doc_type=malfunction_procedure | class_suggested=checklist (VERIFY: filename-derived, author to confirm)"
+source_doc_retrievable,70-a13-launch-checklist.pdf,108,120,90.0,MEASURED,retrievable within this document
+source_doc_dropped,70-a13-launch-checklist.pdf,12,120,10.0,MEASURED,boilerplate within this document
+source_doc,a13-mission-rules.pdf,117,3370,3.47,MEASURED,"doc_type=flight_rule | class_suggested=flight_rules (VERIFY: filename-derived, author to confirm)"
+source_doc_retrievable,a13-mission-rules.pdf,108,117,92.31,MEASURED,retrievable within this document
+source_doc_dropped,a13-mission-rules.pdf,9,117,7.69,MEASURED,boilerplate within this document
+source_doc,78-a13-contingency-checklist.pdf,112,3370,3.32,MEASURED,"doc_type=malfunction_procedure | class_suggested=checklist (VERIFY: filename-derived, author to confirm)"
+source_doc_retrievable,78-a13-contingency-checklist.pdf,92,112,82.14,MEASURED,retrievable within this document
+source_doc_dropped,78-a13-contingency-checklist.pdf,20,112,17.86,MEASURED,boilerplate within this document
+source_doc,a13-csm-sys-checklist.pdf,96,3370,2.85,MEASURED,"doc_type=malfunction_procedure | class_suggested=checklist (VERIFY: filename-derived, author to confirm)"
+source_doc_retrievable,a13-csm-sys-checklist.pdf,91,96,94.79,MEASURED,retrievable within this document
+source_doc_dropped,a13-csm-sys-checklist.pdf,5,96,5.21,MEASURED,boilerplate within this document
+source_doc,77-a13-activation-checklist.pdf,71,3370,2.11,MEASURED,"doc_type=malfunction_procedure | class_suggested=checklist (VERIFY: filename-derived, author to confirm)"
+source_doc_retrievable,77-a13-activation-checklist.pdf,64,71,90.14,MEASURED,retrievable within this document
+source_doc_dropped,77-a13-activation-checklist.pdf,7,71,9.86,MEASURED,boilerplate within this document
+source_doc,a13-nav-procs.pdf,65,3370,1.93,MEASURED,"doc_type=malfunction_procedure | class_suggested=procedure (VERIFY: filename-derived, author to confirm)"
+source_doc_retrievable,a13-nav-procs.pdf,64,65,98.46,MEASURED,retrievable within this document
+source_doc_dropped,a13-nav-procs.pdf,1,65,1.54,MEASURED,boilerplate within this document
+source_doc,a13-flight-plan-rev-a.pdf,55,3370,1.63,MEASURED,"doc_type=malfunction_procedure | class_suggested=flight_plan (VERIFY: filename-derived, author to confirm)"
+source_doc_retrievable,a13-flight-plan-rev-a.pdf,54,55,98.18,MEASURED,retrievable within this document
+source_doc_dropped,a13-flight-plan-rev-a.pdf,1,55,1.82,MEASURED,boilerplate within this document
+source_doc,a13-flightplan-00-60.pdf,54,3370,1.6,MEASURED,"doc_type=malfunction_procedure | class_suggested=flight_plan (VERIFY: filename-derived, author to confirm)"
+source_doc_retrievable,a13-flightplan-00-60.pdf,48,54,88.89,MEASURED,retrievable within this document
+source_doc_dropped,a13-flightplan-00-60.pdf,6,54,11.11,MEASURED,boilerplate within this document
+source_doc,a13-lm-timeline-19700316.pdf,37,3370,1.1,MEASURED,"doc_type=malfunction_procedure | class_suggested=flight_plan (VERIFY: filename-derived, author to confirm)"
+source_doc_retrievable,a13-lm-timeline-19700316.pdf,36,37,97.3,MEASURED,retrievable within this document
+source_doc_dropped,a13-lm-timeline-19700316.pdf,1,37,2.7,MEASURED,boilerplate within this document
+source_doc,75-a13-csm-entry-checklist.pdf,24,3370,0.71,MEASURED,"doc_type=malfunction_procedure | class_suggested=checklist (VERIFY: filename-derived, author to confirm)"
+source_doc_retrievable,75-a13-csm-entry-checklist.pdf,21,24,87.5,MEASURED,retrievable within this document
+source_doc_dropped,75-a13-csm-entry-checklist.pdf,3,24,12.5,MEASURED,boilerplate within this document
+source_doc,a13-lm-data-card-book-final-19700330.pdf,18,3370,0.53,MEASURED,"doc_type=anomaly_report | class_suggested=data_card (VERIFY: filename-derived, author to confirm)"
+source_doc_retrievable,a13-lm-data-card-book-final-19700330.pdf,16,18,88.89,MEASURED,retrievable within this document
+source_doc_dropped,a13-lm-data-card-book-final-19700330.pdf,2,18,11.11,MEASURED,boilerplate within this document
+source_doc,79-a13-lm-data-card-book.pdf,17,3370,0.5,MEASURED,"doc_type=anomaly_report | class_suggested=data_card (VERIFY: filename-derived, author to confirm)"
+source_doc_retrievable,79-a13-lm-data-card-book.pdf,15,17,88.24,MEASURED,retrievable within this document
+source_doc_dropped,79-a13-lm-data-card-book.pdf,2,17,11.76,MEASURED,boilerplate within this document
+source_doc,a13-flightplan-54-splash.pdf,16,3370,0.47,MEASURED,"doc_type=malfunction_procedure | class_suggested=flight_plan (VERIFY: filename-derived, author to confirm)"
+source_doc_retrievable,a13-flightplan-54-splash.pdf,14,16,87.5,MEASURED,retrievable within this document
+source_doc_dropped,a13-flightplan-54-splash.pdf,2,16,12.5,MEASURED,boilerplate within this document
+source_doc,a13-span-c-tank-qty2-proc.pdf,2,3370,0.06,MEASURED,"doc_type=malfunction_procedure | class_suggested=procedure (VERIFY: filename-derived, author to confirm)"
+source_doc_retrievable,a13-span-c-tank-qty2-proc.pdf,1,2,50.0,MEASURED,retrievable within this document
+source_doc_dropped,a13-span-c-tank-qty2-proc.pdf,1,2,50.0,MEASURED,boilerplate within this document
+doc_class_suggested,systems_handbook,1027,3370,30.47,VERIFY,filename-derived grouping proposed by this analysis; NOT a field in corpus.json
+doc_class_suggested_retrievable,systems_handbook,1002,1027,97.57,VERIFY,retrievable within this suggested class
+doc_class_suggested,checklist,938,3370,27.83,VERIFY,filename-derived grouping proposed by this analysis; NOT a field in corpus.json
+doc_class_suggested_retrievable,checklist,871,938,92.86,VERIFY,retrievable within this suggested class
+doc_class_suggested,procedure,600,3370,17.8,VERIFY,filename-derived grouping proposed by this analysis; NOT a field in corpus.json
+doc_class_suggested_retrievable,procedure,523,600,87.17,VERIFY,retrievable within this suggested class
+doc_class_suggested,flight_plan,515,3370,15.28,VERIFY,filename-derived grouping proposed by this analysis; NOT a field in corpus.json
+doc_class_suggested_retrievable,flight_plan,481,515,93.4,VERIFY,retrievable within this suggested class
+doc_class_suggested,reference,138,3370,4.09,VERIFY,filename-derived grouping proposed by this analysis; NOT a field in corpus.json
+doc_class_suggested_retrievable,reference,132,138,95.65,VERIFY,retrievable within this suggested class
+doc_class_suggested,flight_rules,117,3370,3.47,VERIFY,filename-derived grouping proposed by this analysis; NOT a field in corpus.json
+doc_class_suggested_retrievable,flight_rules,108,117,92.31,VERIFY,retrievable within this suggested class
+doc_class_suggested,data_card,35,3370,1.04,VERIFY,filename-derived grouping proposed by this analysis; NOT a field in corpus.json
+doc_class_suggested_retrievable,data_card,31,35,88.57,VERIFY,retrievable within this suggested class
+field_coverage_all,component,1342,3370,39.82,MEASURED,segments with a non-empty component
+field_coverage_retrievable,component,1331,3148,42.28,MEASURED,"segments with a non-empty component, retrievable set only"
+field_coverage_all,signature,1991,3370,59.08,MEASURED,segments with a non-empty signature
+field_coverage_retrievable,signature,1971,3148,62.61,MEASURED,"segments with a non-empty signature, retrievable set only"
+field_coverage_all,symptoms,537,3370,15.93,MEASURED,segments with a non-empty symptoms
+field_coverage_retrievable,symptoms,536,3148,17.03,MEASURED,"segments with a non-empty symptoms, retrievable set only"
+field_coverage_all,links_to,555,3370,16.47,MEASURED,segments with a non-empty links_to
+field_coverage_retrievable,links_to,550,3148,17.47,MEASURED,"segments with a non-empty links_to, retrievable set only"
+field_coverage_all,subsystem,1342,3370,39.82,MEASURED,segments with a non-empty subsystem
+field_coverage_retrievable,subsystem,1331,3148,42.28,MEASURED,"segments with a non-empty subsystem, retrievable set only"
+field_coverage_all,ocr_confidence,3370,3370,100.0,MEASURED,segments with a non-empty ocr_confidence
+field_coverage_retrievable,ocr_confidence,3148,3148,100.0,MEASURED,"segments with a non-empty ocr_confidence, retrievable set only"
+field_coverage_all,effectivity,0,3370,0.0,MEASURED,declared in the v1 schema; never populated by the ingest pipeline
+field_coverage_retrievable,component_AND_links_to,362,3148,11.5,MEASURED,a node that can both be named and chased from
+field_coverage_retrievable,all_four_structural_fields,100,3148,3.18,MEASURED,component AND signature AND symptoms AND links_to all non-empty
+graph_retrievable,links_to_strings_total,1031,,,MEASURED,raw outgoing references before resolution
+graph_retrievable,links_to_strings_resolved,925,1031,89.72,MEASURED,link resolved to >=1 target segment (CorpusGraph.resolution_rate)
+graph_retrievable,links_to_strings_unresolved,106,1031,10.28,MEASURED,no segment matched the reference
+graph_retrievable,edges,28906,,,MEASURED,directed edges after resolution; one link can fan out to several targets
+graph_retrievable,nodes_total,3148,,,MEASURED,segments in this graph
+graph_retrievable,nodes_with_outgoing_edges,346,3148,10.99,MEASURED,segments a chase can start from and leave
+graph_retrievable,edges_per_resolved_link,31.25,,,MEASURED,mean fan-out of a resolved reference
+graph_retrievable,mean_outdegree_of_connected_nodes,83.54,,,MEASURED,
+graph_retrievable,median_outdegree_of_connected_nodes,57.5,,,MEASURED,
+graph_retrievable,max_outdegree,574,,,MEASURED,
+graph_full_corpus,links_to_strings_total,1042,,,MEASURED,raw outgoing references before resolution
+graph_full_corpus,links_to_strings_resolved,935,1042,89.73,MEASURED,link resolved to >=1 target segment (CorpusGraph.resolution_rate)
+graph_full_corpus,links_to_strings_unresolved,107,1042,10.27,MEASURED,no segment matched the reference
+graph_full_corpus,edges,29468,,,MEASURED,directed edges after resolution; one link can fan out to several targets
+graph_full_corpus,nodes_total,3370,,,MEASURED,segments in this graph
+graph_full_corpus,nodes_with_outgoing_edges,347,3370,10.3,MEASURED,segments a chase can start from and leave
+graph_full_corpus,edges_per_resolved_link,31.52,,,MEASURED,mean fan-out of a resolved reference
+graph_full_corpus,mean_outdegree_of_connected_nodes,84.92,,,MEASURED,
+graph_full_corpus,median_outdegree_of_connected_nodes,60,,,MEASURED,
+graph_full_corpus,max_outdegree,576,,,MEASURED,
+annunciation_retrievable,vocab_tokens,1349,,,MEASURED,distinct >=3-char [a-z0-9] tokens across all symptoms strings (CorpusGraph.ann_vocab)
+annunciation_retrievable,segments_with_symptoms,536,3148,17.03,MEASURED,segments carrying >=1 annunciation node
+annunciation_retrievable,symptom_strings_total,1240,,,MEASURED,"occurrences, with repeats"
+annunciation_retrievable,symptom_strings_distinct,935,,,MEASURED,
+annunciation_retrievable,mean_symptoms_per_annotated_segment,2.31,,,MEASURED,
+annunciation_full_corpus,vocab_tokens,1349,,,MEASURED,distinct >=3-char [a-z0-9] tokens across all symptoms strings (CorpusGraph.ann_vocab)
+annunciation_full_corpus,segments_with_symptoms,537,3370,15.93,MEASURED,segments carrying >=1 annunciation node
+annunciation_full_corpus,symptom_strings_total,1241,,,MEASURED,"occurrences, with repeats"
+annunciation_full_corpus,symptom_strings_distinct,935,,,MEASURED,
+annunciation_full_corpus,mean_symptoms_per_annotated_segment,2.31,,,MEASURED,
+ocr_quality,segments_with_confidence,3370,3370,100.0,MEASURED,
+ocr_quality,mean_confidence_all,81.6,,,MEASURED,0-100 Tesseract word confidence
+ocr_quality,median_confidence_all,87.5,,,MEASURED,
+ocr_quality,mean_confidence_retrievable,81.7,,,MEASURED,
+ocr_quality,retrievable_below_60,318,3148,10.1,MEASURED,
+ocr_quality,retrievable_below_70,558,3148,17.73,MEASURED,
+ocr_quality,retrievable_below_80,954,3148,30.3,MEASURED,
+ocr_quality,retrievable_below_90,2006,3148,63.72,MEASURED,
+segment_length_all,mean_words,237.8,,,MEASURED,
+segment_length_all,median_words,184,,,MEASURED,
+segment_length_all,total_words,801389,,,MEASURED,
+segment_length_retrievable,mean_words,247.9,,,MEASURED,
+segment_length_retrievable,median_words,194,,,MEASURED,
+segment_length_retrievable,total_words,780422,,,MEASURED,
+segment_length_dropped,mean_words,94.4,,,MEASURED,
+segment_length_dropped,median_words,7,,,MEASURED,
+segment_length_dropped,total_words,20967,,,MEASURED,
+id_integrity,records_total,3370,,,MEASURED,rows in corpus.json
+id_integrity,distinct_ids_total,1201,3370,35.64,MEASURED,"segment ids are formatted <doc_type>-p<page>, so every document sharing a doc_type collides on page number - ids are NOT unique"
+id_integrity,records_on_a_colliding_id,2669,3370,79.2,MEASURED,records whose id is shared with >=1 other record
+id_integrity,max_records_sharing_one_id,17,,,MEASURED,
+id_integrity,retrievable_distinct_ids,1174,3148,37.29,MEASURED,size of SalienceBM25Retriever.pos and CorpusGraph.by_id
+id_integrity,retrievable_segments_shadowed,1974,3148,62.71,MEASURED,segments whose id maps to a DIFFERENT segment in pos/by_id; score_of() and neighbors() return the wrong segment for these
+graph_collision_free,links_to_strings_total,1031,,,MEASURED,"same resolution rule as CorpusGraph, but keyed on record index instead of the colliding id"
+graph_collision_free,links_to_strings_resolved,903,1031,87.58,MEASURED,
+graph_collision_free,edges,28018,,,MEASURED,compare graph_retrievable/edges - the shipped number is the one the paper/deck quotes
+graph_collision_free,nodes_with_outgoing_edges,510,3148,16.2,MEASURED,
+graph_collision_free,distinct_segments_reachable_as_target,1914,3148,60.8,MEASURED,
+graph_collision_free,mean_outdegree_of_connected_nodes,54.94,,,MEASURED,
+graph_collision_free,median_outdegree_of_connected_nodes,29.0,,,MEASURED,
+graph_collision_free,max_outdegree,617,,,MEASURED,
+graph_collision_free,edges_per_resolved_link,31.03,,,MEASURED,"a link string is a terse OCR'd reference matched by >=2 shared tokens against component/signature, so one reference fans out to many segments"
+provenance,corpus_file,corpus.json,,,MEASURED,04_implementation/v1_baseline/corpus.json == 05_jetson_edge/lodestar_edge/corpus.json (byte-identical)
+provenance,corpus_sha256,f4822dc101f371d5ff5b31752dd6a5d62b8b6b41ce956521ec29a0088aa74339,,,MEASURED,
+provenance,corpus_mtime,2026-07-09T19:34:19,,,MEASURED,
+provenance,computed_on,2026-09-09,,,MEASURED,
+provenance,code_used,lodestar_edge.retriever.is_boilerplate + lodestar_edge.graph.CorpusGraph,,,MEASURED,same objects lodestar_edge/cli.py:build() constructs at runtime

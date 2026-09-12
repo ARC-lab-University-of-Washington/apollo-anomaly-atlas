@@ -1,0 +1,656 @@
+{
+ "Apollo 7": [
+  {
+   "symptom": "lost S-band voice and PCM telemetry on the transponder, switched transponders",
+   "subsystem": "comms-Sband",
+   "documented_cause": "The PCM and voice subcarriers were lost on the secondary S-band transponder. Postflight X-ray, functional, bench, vibration, and temperature testing of the switch and transponder were all negative. The report concluded the only components w",
+   "component_terms": [
+    "S-band transponder",
+    "secondary transponder",
+    "transponder select switch",
+    "PM subcarrier",
+    "PCM telemetry",
+    "S-band system"
+   ]
+  },
+  {
+   "symptom": "master alarm, main bus A and B undervolt near CM/SM separation",
+   "subsystem": "EPS",
+   "documented_cause": "At command module/service module separation the crew reported caution-and-warning undervoltage indications and voltages of 25.0 and 25.1 volts on main buses A and B (as much as 4.5 volts lower than expected). Voltage rose above the alarm le",
+   "component_terms": [
+    "main bus A",
+    "main bus B",
+    "dc main bus",
+    "entry battery",
+    "battery separator",
+    "caution and warning system"
+   ]
+  },
+  {
+   "symptom": "fuel cell 2 condenser exit temperature high before an SPS burn",
+   "subsystem": "EPS",
+   "documented_cause": "Prior to the fifth service propulsion maneuver, the fuel cell 2 condenser exit temperature rose to 180 F (nominal 155-165 F); after that maneuver, every time fuel cell loads were increased the fuel cell 2 exit temperature rose to 180-190 F.",
+   "component_terms": [
+    "fuel cell 2",
+    "condenser exit temperature",
+    "secondary bypass valve",
+    "shuttle valve",
+    "fuel cell cooling system",
+    "radiator"
+   ]
+  },
+  {
+   "symptom": "FDAI attitude jumped about 160 degrees switching from G and N to SCS",
+   "subsystem": "GNC",
+   "documented_cause": "The total attitude on flight director attitude indicator no. 1 changed about 160 degrees in pitch when the attitude source was switched from the guidance and navigation system to the stabilization and control system. The condition was repro",
+   "component_terms": [
+    "flight director attitude indicator",
+    "electronic display assembly",
+    "switching relay",
+    "sine/cosine resolver",
+    "guidance and navigation system",
+    "stabilization and control system"
+   ]
+  },
+  {
+   "symptom": "primary water evaporator erratic, wick dryout at low load, turned it off",
+   "subsystem": "ECLSS",
+   "documented_cause": "Under the low, variable heat loads that existed, the primary evaporator operated erratically in the automatic mode, causing what appeared to be wick drying and subsequent flash freezing; it was frequently serviced with water but was ultimat",
+   "component_terms": [
+    "primary water evaporator",
+    "water evaporator",
+    "boiler wick",
+    "temperature sensor",
+    "sponge material",
+    "automatic control mode"
+   ]
+  }
+ ],
+ "Apollo 8": [
+  {
+   "symptom": "EMS delta-V counter jumping, accelerometer transients during entry",
+   "subsystem": "GNC",
+   "documented_cause": "Two distinct problems. (a) The g/velocity transients during entry (and the slow drive-to-null after the third midcourse correction) were caused by a bubble in the entry monitor system accelerometer's damping fluid; the case contained ~1 cub",
+   "component_terms": [
+    "entry monitor system",
+    "delta V counter",
+    "accelerometer",
+    "damping fluid",
+    "O-ring seal",
+    "sign change circuit"
+   ]
+  },
+  {
+   "symptom": "cabin and hatch windows fogged over after several hours",
+   "subsystem": "structures",
+   "documented_cause": "Contamination/fogging of the windows was caused by outgassing of silicone oils from the RTV (room-temperature-vulcanizing) sealing material, consistent with the Apollo 7 window-fogging analysis that identified this as the primary cause. Vis",
+   "component_terms": [
+    "hatch window",
+    "side windows",
+    "rendezvous windows",
+    "RTV sealing material",
+    "heat shield pane",
+    "pressure panes"
+   ]
+  },
+  {
+   "symptom": "potable water quantity indicator reading erratic",
+   "subsystem": "ECLSS",
+   "documented_cause": "The potable water tank quantity measurement became erratic at 143:53:00 because moisture reached the indicator's variable resistor; disassembly revealed corrosion in the indicator housing, on the variable resistor, and on the actuator pulle",
+   "component_terms": [
+    "potable water tank",
+    "quantity measuring system",
+    "variable resistor",
+    "indicator housing",
+    "actuator pulley",
+    "gas bladder"
+   ]
+  }
+ ],
+ "Apollo 9": [
+  {
+   "symptom": "no left translation during transposition, RCS quad isolation valve talkbacks barber-pole closed",
+   "subsystem": "RCS",
+   "documented_cause": "Investigation was inconclusive. Candidate causes examined and largely discounted were inadvertent crew switch actuation, particulate contamination, induced electrical transients, and reduced magnetic latching force. Mechanical shock from CS",
+   "component_terms": [
+    "propellant isolation valve",
+    "reaction control system (RCS) quad",
+    "quad C / quad D",
+    "position indicator flag (talkback)",
+    "momentary switch (panel 2)",
+    "magnetic latch"
+   ]
+  },
+  {
+   "symptom": "repeated master alarms from SPS propellant gauging indicating an unbalance",
+   "subsystem": "SPS",
+   "documented_cause": "All master alarms were explainable. The first alarm was caused by propellant level in the capacitive measuring tube not reaching the settled level as soon as expected after start-up. The next five alarms resulted from an electrical zero bia",
+   "component_terms": [
+    "service propulsion system (SPS)",
+    "propellant utilization and gaging system",
+    "capacitive measuring tube/probe",
+    "oxidizer measuring circuit",
+    "point sensors (auxiliary gaging system)",
+    "master alarm / caution and warning"
+   ]
+  },
+  {
+   "symptom": "lost automatic cryogenic H2 pressure control, over-pressurized to 270 psia",
+   "subsystem": "EPS",
+   "documented_cause": "The pressure switches were ruled out (a fail-to-turn-on would require one switch to fail open while a fail-to-turn-off would require both switches to fail closed). The most probable cause was an intermittent open-circuit condition in the mo",
+   "component_terms": [
+    "cryogenic hydrogen tank",
+    "automatic pressure control system",
+    "pressure switch",
+    "heater",
+    "motor control circuit",
+    "16-gage terminal board"
+   ]
+  },
+  {
+   "symptom": "scanning telescope shaft stuck intermittently, optics counter inoperative",
+   "subsystem": "GNC",
+   "documented_cause": "The counter malfunction was caused by the pin on the \"tenths\" drum dropping out and eventually jamming the gear, so the geneva mechanism no longer engaged the \"units\" drum. Root cause was an out-of-tolerance (oversize) hole on the drive hub",
+   "component_terms": [
+    "scanning telescope",
+    "mechanical counter / counter shaft",
+    "\"tenths\" drum drive hub",
+    "retaining pin",
+    "geneva gear/mechanism",
+    "split anti-backlash gear"
+   ]
+  },
+  {
+   "symptom": "docking probe would not extend and unlatch until the third try",
+   "subsystem": "structures",
+   "documented_cause": "The extend/release-retract switch was not held in position long enough for a separating force to effect physical separation, and was not actuated long enough to allow the docking probe to fully extend/cock. By design, the latches will not c",
+   "component_terms": [
+    "docking probe",
+    "probe extend/release-retract switch",
+    "probe-extend latch",
+    "release motor",
+    "docking mechanism",
+    "barber-pole display indicator"
+   ]
+  },
+  {
+   "symptom": "LM descent engine running rough near 27 percent throttle, suspected helium ingestion",
+   "subsystem": "LM-DPS",
+   "documented_cause": "Helium ingestion. Helium from the propellant tanks entered the propellant lines under lateral and/or rotational accelerations (highly probable with the ~60-percent ullage and the zero-g can uncovered). As the gas passed the throttle assembl",
+   "component_terms": [
+    "descent engine / descent propulsion system",
+    "throttle assembly",
+    "propellant interface (oxidizer/fuel interface pressure)",
+    "engine chamber pressure",
+    "injector",
+    "zero-g can"
+   ]
+  },
+  {
+   "symptom": "LM supercritical helium tank pressure decaying, leak at the squib valve",
+   "subsystem": "LM-DPS",
+   "documented_cause": "A leak of about 0.1 lb/hr (upstream of the heat exchanger) caused the 2.9 psi/hr decay; ground tests with a leak introduced at the squib valve duplicated the flight temperature indications. A failure of an internally brazed squib valve (a c",
+   "component_terms": [
+    "supercritical helium tank",
+    "descent propulsion system",
+    "squib valve (internally brazed braze joint)",
+    "heat exchanger",
+    "solenoid latch valve",
+    "helium regulator"
+   ]
+  }
+ ],
+ "Apollo 10": [
+  {
+   "symptom": "LM ascent stage tumbled at staging with large attitude excursions, near gimbal lock, AGS mode control switch position error",
+   "subsystem": "GNC-AGS",
+   "documented_cause": "Inadvertent cycling of the abort guidance system (AGS) mode control switch from ATTITUDE HOLD to AUTO by the crew while diagnosing and reacting to an erroneous yaw rate gyro output (yaw gyro reading -1.7 deg/sec, its own anomaly 15.2.10, at",
+   "component_terms": [
+    "abort guidance system (AGS)",
+    "AGS mode control switch",
+    "attitude control switches",
+    "yaw rate gyro",
+    "primary guidance system",
+    "reaction control thrusters (direct coils)"
+   ]
+  },
+  {
+   "symptom": "cabin pressure dropped rapidly after LM jettison, tunnel not vented first",
+   "subsystem": "ECLSS",
+   "documented_cause": "The docking tunnel could not be vented before separation because an incorrect fitting had been installed on the tunnel vent line (anomaly 15.1.16 'Tunnel Would Not Vent'), effectively capping the vent, so the tunnel stayed pressurized at 4.",
+   "component_terms": [
+    "lunar module cabin",
+    "docking tunnel",
+    "tunnel vent line / tunnel vent system",
+    "forward (upper) hatch",
+    "hatch latch",
+    "separation pyrotechnics"
+   ]
+  },
+  {
+   "symptom": "master alarm and ascent propellant low-level light on the first ascent engine firing",
+   "subsystem": "LM-APS",
+   "documented_cause": "Valid low-level indication caused by the oxidizer low-level sensor being momentarily uncovered by a gas bubble at ignition. On Apollo 10 the ascent propellant tanks were filled only ~50 percent, and the +X translation used to settle the pro",
+   "component_terms": [
+    "ascent propulsion system",
+    "propellant low-level sensor",
+    "oxidizer sensor / oxidizer tank",
+    "low-level warning light",
+    "master alarm (caution and warning)",
+    "ascent propellant tanks"
+   ]
+  }
+ ],
+ "Apollo 11": [
+  {
+   "symptom": "1202 and 1201 program alarms during powered descent, rendezvous radar switch configuration",
+   "subsystem": "GNC-PGNS",
+   "documented_cause": "Executive overflow (program) alarms were caused by the guidance computer being unable to complete all scheduled data processing in a computation cycle. More than 10-15% of computer capacity was preempted by spurious counter interrupts from ",
+   "component_terms": [
+    "rendezvous radar",
+    "coupling data unit",
+    "rendezvous radar mode switch",
+    "guidance computer (LGC)",
+    "attitude and translation control assembly",
+    "shaft and trunnion resolvers"
+   ]
+  },
+  {
+   "symptom": "LM descent engine fuel line high pressure after landing, heat exchanger froze",
+   "subsystem": "LM-DPS",
+   "documented_cause": "During simultaneous venting of the descent propellant and supercritical helium tanks, fuel in the fuel/helium heat exchanger was frozen by the cold helium flowing through the heat exchanger. Subsequent heat soakback from the descent engine ",
+   "component_terms": [
+    "fuel/helium heat exchanger",
+    "descent engine",
+    "engine shutoff valve",
+    "supercritical helium tank",
+    "solenoid valve",
+    "bellows links"
+   ]
+  },
+  {
+   "symptom": "LM steerable S-band antenna losing lock, hard to hold comms during descent",
+   "subsystem": "comms-Sband",
+   "documented_cause": "Both vehicle structural blockage and lunar-surface multipath signals probably contributed to the reduced measured downlink signal. The antenna coverage-restriction diagrams in the Spacecraft Operational Data Book contained errors for the po",
+   "component_terms": [
+    "steerable antenna",
+    "S-band steerable antenna",
+    "thruster plume deflectors",
+    "antenna track mode switch (SLEW position)",
+    "Spacecraft Operational Data Book",
+    "antenna boresight"
+   ]
+  },
+  {
+   "symptom": "O2 flow-rate master alarms during suit-loop pressurization",
+   "subsystem": "ECLSS",
+   "documented_cause": "During the initial lunar module pressurization, two master alarms were activated as the oxygen flow rate decreased from full scale. The filter capacitor in the oxygen flow sensing circuit (a metalized Mylar capacitor, part of an electromagn",
+   "component_terms": [
+    "oxygen flow sensor",
+    "oxygen flow sensing circuit",
+    "filter capacitor (metalized Mylar capacitor)",
+    "electromagnetic interference filter",
+    "relay K1",
+    "relay K2"
+   ]
+  }
+ ],
+ "Apollo 12": [
+  {
+   "symptom": "lightning strike at launch, fuel cells dropped off the buses, inertial platform lost, telemetry garbled",
+   "subsystem": "EPS",
+   "documented_cause": "Two lightning discharges were triggered by the vehicle passing through electric fields (36.5 s cloud-to-earth through the vehicle; 52 s cloud-to-cloud). At the first discharge, the voltage transient induced on the battery relay bus exceeded",
+   "component_terms": [
+    "fuel cell",
+    "main bus",
+    "signal conditioning equipment",
+    "inertial platform",
+    "coupling display unit",
+    "silicon controlled rectifier (fuel cell overload sensor)"
+   ]
+  },
+  {
+   "symptom": "RCS propellant and helium isolation valves closed at CSM to S-IVB separation from pyro shock",
+   "subsystem": "RCS",
+   "documented_cause": "The separation shock produced by the pyrotechnics at S-IVB separation (analysis indicated intensities of 45g to 275g, random in direction, lasting 1 to 3 milliseconds) exceeded the valve qualification level (7g shocks of 11 ms), closing the",
+   "component_terms": [
+    "helium isolation valve",
+    "propellant isolation valve",
+    "quad A / quad B",
+    "reaction control system",
+    "poppet",
+    "pyrotechnics (separation shock)"
+   ]
+  },
+  {
+   "symptom": "S-band high-gain antenna low signal in narrow-beam mode",
+   "subsystem": "comms-Sband",
+   "documented_cause": "Operation in the narrow-beam automatic/auto-reacquisition mode produced an approximately 10 to 12 dB reduction in both uplink and downlink signal strength. The malfunction was isolated (highest probability) to the narrow-beam comparator or ",
+   "component_terms": [
+    "S-band high-gain antenna",
+    "narrow-beam comparator",
+    "dual diplexer",
+    "stripline units",
+    "transfer switch",
+    "lobing switch / diode"
+   ]
+  },
+  {
+   "symptom": "O2 usage higher than expected, leak in the 900 psi service module oxygen system",
+   "subsystem": "ECLSS",
+   "documented_cause": "At end of mission there was an approximately 27-pound discrepancy between the measured total cryogenic oxygen usage and the calculated combined environmental control system plus fuel cell usage. No excessive flow was detected downstream of ",
+   "component_terms": [
+    "900-psi oxygen system",
+    "service module",
+    "environmental control system",
+    "fuel cell",
+    "check valve",
+    "oxygen flowmeter / flow sensor"
+   ]
+  },
+  {
+   "symptom": "optics shaft angle fluctuating in zero-optics mode",
+   "subsystem": "GNC",
+   "documented_cause": "Analysis of the zero-optics-mode circuitry isolated the problem to the power-and-servo assembly - either a relay module, a two-speed switch module, or the motor drive amplifier module - with the motor drive amplifier module the most likely ",
+   "component_terms": [
+    "optics shaft",
+    "zero optics mode",
+    "power-and-servo assembly",
+    "motor drive amplifier module",
+    "relay module",
+    "two-speed switch module"
+   ]
+  }
+ ],
+ "Apollo 14": [
+  {
+   "symptom": "docking probe will not capture, repeated attempts, capture latches failed before hard dock",
+   "subsystem": "structures-docking",
+   "documented_cause": "The most probable cause was contamination or debris in the docking probe mechanism which prevented the capture latches from engaging and which later became dislodged, allowing a normal docking on a subsequent attempt.",
+   "component_terms": [
+    "docking probe",
+    "capture latches",
+    "probe tip",
+    "docking mechanism",
+    "probe and drogue",
+    "command module docking system"
+   ]
+  },
+  {
+   "symptom": "spurious ABORT bit set in the LM guidance computer before powered descent",
+   "subsystem": "GNC-PGNS",
+   "documented_cause": "The most probable cause of the spurious abort command was metallic contamination within the hermetically sealed abort-switch module, which intermittently closed the abort switch contacts and set the abort bit in the computer.",
+   "component_terms": [
+    "abort switch",
+    "abort-switch module",
+    "LM guidance computer",
+    "descent engine control",
+    "abort pushbutton",
+    "guidance computer software"
+   ]
+  },
+  {
+   "symptom": "landing radar will not lock on during descent, cycled the breaker to change scale",
+   "subsystem": "GNC",
+   "documented_cause": "The high slant range indicated at lock-on was most likely caused by the landing radar locking onto energy returned into the antenna side lobe; the conditions exceeded the maximum range measurement design limit, prompting the scale switching",
+   "component_terms": [
+    "landing radar",
+    "landing radar antenna",
+    "antenna side lobe",
+    "range (velocity) scale",
+    "slant range",
+    "antenna position 1"
+   ]
+  },
+  {
+   "symptom": "Abort Guidance System went dead during rendezvous braking",
+   "subsystem": "GNC-AGS",
+   "documented_cause": "The failure was isolated to the power supply section or the sequencer of the abort electronics assembly; the specific underlying component defect was not identified, and design margins and manufacturing procedures were found adequate.",
+   "component_terms": [
+    "abort guidance system",
+    "abort electronics assembly",
+    "power supply",
+    "sequencer",
+    "abort sensor assembly",
+    "data entry and display assembly"
+   ]
+  },
+  {
+   "symptom": "rapid-repress oxygen bottles losing pressure, extra cabin repressurizations needed",
+   "subsystem": "ECLSS",
+   "documented_cause": "Postflight checks of the 900-psi rapid repressurization system showed an elevated leakage rate (about 40 standard cc/min versus a preflight value of 14 standard cc/min), consistent with the observed loss of pressure requiring additional rep",
+   "component_terms": [
+    "rapid repressurization system",
+    "900-psi oxygen system",
+    "repressurization oxygen bottles",
+    "cabin repressurization",
+    "environmental control system"
+   ]
+  },
+  {
+   "symptom": "unable to disconnect main bus A",
+   "subsystem": "EPS",
+   "documented_cause": "The motor switch stalled: a black track of deposits from the brushes on the commutator increased the brush-to-commutator resistance, causing the motor to run slower and fail to complete the transfer to disconnect main bus A.",
+   "component_terms": [
+    "main bus A",
+    "motor switch",
+    "commutator",
+    "brushes",
+    "main bus tie motor switch",
+    "electrical power system"
+   ]
+  }
+ ],
+ "Apollo 15": [
+  {
+   "symptom": "SPS thrust light on the EMS lit with no fire command, short to ground in the delta-V thrust switch",
+   "subsystem": "SPS",
+   "documented_cause": "The SPS thrust light on the EMS came on without a fire command because the system A delta-V thrust switch was intermittently shorted to ground. The short path was created by a loose wire strand (about 0.055 inch long) lying on the flange of",
+   "component_terms": [
+    "service propulsion system",
+    "entry monitor system",
+    "delta-V thrust switch",
+    "SPS thrust light",
+    "system A",
+    "feed-through terminal"
+   ]
+  },
+  {
+   "symptom": "one of three main parachutes collapsed near 6000 feet, landed on two chutes",
+   "subsystem": "structures-parachute",
+   "documented_cause": "The most likely cause was the command module reaction control system (CM RCS) fuel (monomethylhydrazine) dump through the hot RCS engines. Ground testing showed the fuel burned profusely when dumped through a hot engine, and the resulting b",
+   "component_terms": [
+    "main parachute",
+    "command module reaction control system",
+    "reaction control system engine",
+    "monomethylhydrazine fuel",
+    "propellant dump",
+    "connector link"
+   ]
+  },
+  {
+   "symptom": "water leaking from the chlorine injection port when the cap was removed",
+   "subsystem": "ECLSS",
+   "documented_cause": "The compression on the chlorine injection port septum was insufficient, so the insert loosened due to 'O-ring drag' when the cap was removed, allowing water to leak from the port.",
+   "component_terms": [
+    "water panel",
+    "chlorine injection port",
+    "septum",
+    "insert",
+    "O-ring",
+    "cap"
+   ]
+  },
+  {
+   "symptom": "SM RCS propellant isolation valve talkbacks repeatedly showing closed",
+   "subsystem": "RCS",
+   "documented_cause": "The propellant isolation valve magnet had been partially degaussed, most likely by exposure to a reversed polarity at a voltage level sufficient to degauss the magnet during testing, which weakened the magnetic latching force so the valve t",
+   "component_terms": [
+    "service module reaction control system",
+    "propellant isolation valve",
+    "talkback indicator",
+    "magnetic latching valve",
+    "magnet"
+   ]
+  },
+  {
+   "symptom": "AC bus 2 and DC bus B undervolt alarms, lost DSKY and panel backlighting",
+   "subsystem": "EPS",
+   "documented_cause": "A shorted input filter capacitor in the mission timer caused the AC bus 2 and DC main bus B undervoltage alarms and the loss of DSKY/panel integral lighting. The ceramic capacitor is rated for 200-volt dc applications but was being used in ",
+   "component_terms": [
+    "AC bus 2",
+    "DC main bus B",
+    "mission timer",
+    "input filter capacitor",
+    "DSKY",
+    "integral lighting circuit breaker"
+   ]
+  }
+ ],
+ "Apollo 16": [
+  {
+   "symptom": "SPS secondary yaw gimbal servo loop oscillating at burn checkout, open rate-feedback loop, delayed the landing",
+   "subsystem": "SPS",
+   "documented_cause": "An open in the rate feedback loop of the secondary yaw servo system. Postflight testing of command module wiring/connectors and bench testing of the thrust vector servo assembly revealed no abnormalities, so the failure must have occurred i",
+   "component_terms": [
+    "service propulsion engine gimbal actuator",
+    "secondary yaw servo loop",
+    "rate feedback loop",
+    "thrust vector servo assembly",
+    "engine gimbal actuator wiring harness connectors",
+    "yaw gimbal wiring loop"
+   ]
+  },
+  {
+   "symptom": "water-glycol temperature control failed in auto, ran manual for the rest of the flight",
+   "subsystem": "ECLSS",
+   "documented_cause": "A malfunction in the water/glycol temperature controller (valve controller) that modulates the control valve. Postflight testing isolated the problem to the valve controller and identified two separate problems: an intermittent condition in",
+   "component_terms": [
+    "water/glycol temperature control circuit",
+    "water/glycol temperature controller (valve controller)",
+    "temperature control valve",
+    "silicon-controlled rectifiers",
+    "radiator",
+    "primary coolant loop"
+   ]
+  },
+  {
+   "symptom": "erroneous gimbal-lock indication, computer caged the platform, crew realigned",
+   "subsystem": "GNC-PGNS",
+   "documented_cause": "Contact bounce in the thrust vector enable relay. Selecting the computer idling program removed the thrust vector enable discrete, switching the relay between two 800-Hz excitation-voltage sources feeding a transformer in the digital-to-ana",
+   "component_terms": [
+    "thrust vector enable relay",
+    "coupling data unit",
+    "middle gimbal angle read counter",
+    "digital-to-analog converter",
+    "800-hertz excitation transformer",
+    "inertial measurement unit / platform"
+   ]
+  },
+  {
+   "symptom": "high heat leak into cryogenic hydrogen tank 3, vacuum annulus degraded",
+   "subsystem": "EPS",
+   "documented_cause": "Degradation of the insulating vacuum in the annulus (by about one decade, ~10^-6 to 10^-5 torr) caused by an ambient air leak into the insulation vacuum annulus, most probably from a small hole/crack that opened in the outer shell about 2-1",
+   "component_terms": [
+    "cryogenic hydrogen tank 3",
+    "insulation vacuum annulus",
+    "gold-coated H-film insulation",
+    "outer shell (pressure vessel)",
+    "vacuum ion pump"
+   ]
+  },
+  {
+   "symptom": "high-gain antenna would not acquire for over an hour",
+   "subsystem": "comms-Sband",
+   "documented_cause": "Tests could not reproduce the fault in a normal circuit; the documented probable cause is an unscheduled 'inhibit' arising from simultaneous selection of both the 'reacquisition' and 'automatic' track modes (which would require a fault in t",
+   "component_terms": [
+    "high-gain antenna",
+    "track mode switch",
+    "mode select switch",
+    "logic inhibit gate (integrated circuit)",
+    "high-gain antenna electronics box",
+    "scan-limit logic"
+   ]
+  },
+  {
+   "symptom": "LM RCS system A helium regulator leaking internally, relief valves cycling",
+   "subsystem": "RCS",
+   "documented_cause": "Internal leakage in the regulator assembly caused by particulate contamination on the poppet seats (the variable leak rate is characteristic of particulate contamination). The most probable cause is contamination introduced during component",
+   "component_terms": [
+    "reaction control system (system A)",
+    "helium regulator assembly",
+    "primary regulator",
+    "secondary regulator",
+    "regulator poppet / poppet seat",
+    "relief valve"
+   ]
+  }
+ ],
+ "Apollo 17": [
+  {
+   "symptom": "spurious master alarms with no caution-warning lights, main bus A undervolt light flickering, intermittent short",
+   "subsystem": "EPS",
+   "documented_cause": "An intermittent short-to-ground in the main bus A undervoltage warning circuit \u2014 an intermittent ground on panel 2 that occurred only under zero-g conditions. The short could be in the wiring or conductive contamination in the main A reset ",
+   "component_terms": [
+    "master alarm",
+    "caution and warning system",
+    "main bus A undervoltage warning circuit",
+    "main bus A undervoltage warning light",
+    "panel 2",
+    "main A reset switch"
+   ]
+  },
+  {
+   "symptom": "cryogenic hydrogen tank pressure deadband narrowed, contaminated pressure switch",
+   "subsystem": "EPS",
+   "documented_cause": "Contamination in the tank pressure switch. Hard particles \u2014 burrs found breaking off the coined toggle plate \u2014 floating in the switch's stop-mechanism area under zero-gravity restricted the full travel of the stop, changing the pressures at",
+   "component_terms": [
+    "cryogenic hydrogen system",
+    "hydrogen tank 1",
+    "hydrogen tank 2",
+    "pressure switch",
+    "toggle plate",
+    "stop mechanism"
+   ]
+  },
+  {
+   "symptom": "EMS accelerometer null-bias shift, 0.05g light illuminated erroneously",
+   "subsystem": "GNC",
+   "documented_cause": "Root cause not conclusively established (postflight test of the removed unit was normal). Three candidate causes were identified: (a) a contaminant particle or bubble in the accelerometer damping fluid migrating into the magnetic gap or lod",
+   "component_terms": [
+    "entry monitor system",
+    "accelerometer",
+    "0.05g light",
+    "rebalance coil",
+    "temperature compensation circuit",
+    "function switch"
+   ]
+  },
+  {
+   "symptom": "water-glycol temperature control valve failed to open properly",
+   "subsystem": "ECLSS",
+   "documented_cause": "Slight sticking in the valve gear train after it had been driven hard against the full-closed stop during the hot portions of the lunar orbits; a larger-than-normal temperature error and modulated electrical signal were needed to free the t",
+   "component_terms": [
+    "water/glycol temperature control valve",
+    "valve gear train",
+    "radiator outlet",
+    "evaporator",
+    "gear teeth",
+    "valve clutch mechanism"
+   ]
+  },
+  {
+   "symptom": "LM oxygen demand regulator A suit-loop leakage during EVA depressurization, switched to regulator B",
+   "subsystem": "ECLSS",
+   "documented_cause": "Suit-loop leakage (0.04 lb/hr) attributed to contamination of the regulator A seat \u2014 most probably a particle of about 2.5 microns lodged between the regulator (ball) poppet and the seat. Inadvertent bumping of the regulator handle by the c",
+   "component_terms": [
+    "oxygen demand regulator A",
+    "demand regulator B",
+    "suit loop",
+    "ball poppet",
+    "regulator seat",
+    "cabin depressurization"
+   ]
+  }
+ ]
+}
