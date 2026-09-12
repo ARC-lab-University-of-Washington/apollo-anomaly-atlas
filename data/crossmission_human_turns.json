@@ -329,20 +329,6 @@
    ],
    "anomalies": [
     {
-     "symptom": "1202 and 1201 program alarms during powered descent, rendezvous radar switch configuration",
-     "crew_initiated": true,
-     "found_exchange": true,
-     "get_report_end": "102:38:48",
-     "get_capcom_diagnosis": "102:38:53",
-     "human_time_s": 5,
-     "human_turns_to_diagnosis": 1,
-     "confidence": "high",
-     "exchange_quote": "102:38:26 CDR (Eagle): PROGRAM ALARM. / 102:38:30 CDR: It's a 1202. / 102:38:32 LMP: 1202. / 102:38:48 CDR: Give us a reading on the 1202 PROGRAM ALARM. / 102:38:53 CC (Duke): Roger. We got - We're GO on that alarm.",
-     "notes": "Crew-reported and located verbatim in both the NASA ALSJ landing page and the Technical Air-to-Ground Voice Transcription (GOSS NET 1). The crew's fault report culminates in Armstrong's request 'Give us a reading on the 1202 PROGRAM ALARM' (transmission timestamped 102:38:48); the very next air-to-ground transmission is CapCom Charlie Duke's diagnosis/clearance 'We're GO on that alarm' (102:38:53) = 1 exchange, ~5 s. (The MOCR-internal work by GUIDO Steve Bales/Jack Garman is not on the air-to-ground loop and is not counted.) The 1201 alarm was handled the same way and is corroborated: '102:42:19 LMP (Aldrin): PROGRAM ALARM ... 1201.' / '102:42:24 CC (Duke): Roger. 1201 alarm. We're GO. Same type. We're GO.' (~5 s, 1 turn). The rendezvous-radar switch mis-configuration as the ROOT CAUSE was determined postflight, not on the loop; the on-loop diagnosis was simply the GO-to-continue call.",
-     "source_url": "https://archive.org/download/Apollo11Audio/AS11_TEC_djvu.txt",
-     "mission": "Apollo 11"
-    },
-    {
      "symptom": "LM descent engine fuel line high pressure after landing, heat exchanger froze",
      "crew_initiated": false,
      "found_exchange": false,
@@ -397,20 +383,6 @@
     "https://www.nasa.gov/history/mission-transcripts-mercury-gemini-and-apollo/"
    ],
    "anomalies": [
-    {
-     "symptom": "lightning strike at launch, fuel cells dropped off the buses, inertial platform lost, telemetry garbled",
-     "crew_initiated": true,
-     "found_exchange": true,
-     "get_report_end": "000:01:12",
-     "get_capcom_diagnosis": "000:01:36",
-     "human_turns_to_diagnosis": 1,
-     "human_time_s": 24,
-     "confidence": "high",
-     "exchange_quote": "000:01:02 Conrad: Okay, we just lost the platform, gang. I don't know what happened here; we had everything in the world drop out. | 000:01:08 Carr: Roger. | 000:01:12 Conrad: I got three fuel cell lights, an AC bus light, a fuel cell disconnect, AC bus overload 1 and 2, Main Bus A and B out. [Long pause.] | 000:01:36 Carr: Apollo 12, Houston. Try SCE to Auxiliary. Over.",
-     "source_url": "https://www.apollojournals.org/afj/ap12fj/01launch_to_earth_orbit.html",
-     "notes": "The crew reported the electrical/platform failures over the air-to-ground loop during ascent. Their definitive fault report is Conrad's enumeration of warning lights at 000:01:12 (preceded by the platform-loss call at 000:01:02, which CapCom Carr acknowledged 'Roger' at 000:01:08). The first corrective instruction transmitted from the ground is CapCom Carr's 'Try SCE to Auxiliary' at 000:01:36 -- the very next air-to-ground transmission after the crew's report (only onboard-recorder chatter falls in between), hence 1 turn / 24 s. Note the actual diagnosis was made by EECOM John Aaron and relayed by CapCom Carr; the 'telemetry garbled' portion of the symptom was ground-detected (crew were unaware their downlink was scrambled). GET stamps mark the start of each transmission. High confidence: verbatim from the Apollo 12 Flight Journal launch chapter, corroborated by the Mission Report.",
-     "mission": "Apollo 12"
-    },
     {
      "symptom": "RCS propellant and helium isolation valves closed at CSM to S-IVB separation from pyro shock",
      "crew_initiated": false,
@@ -586,20 +558,6 @@
     "https://sma.nasa.gov/SignificantIncidents/assets/apollo-15-mission-anomaly-report-no.-1-main-parachute-failure.pdf (parachute failure anomaly report)"
    ],
    "anomalies": [
-    {
-     "symptom": "SPS thrust light on the EMS lit with no fire command, short to ground in the delta-V thrust switch",
-     "crew_initiated": true,
-     "found_exchange": true,
-     "human_turns_to_diagnosis": 3,
-     "confidence": "high",
-     "get_report_end": "003:36:28",
-     "get_capcom_diagnosis": "003:38:44",
-     "human_time_s": 136,
-     "exchange_quote": "003:36:12 Scott: 'Okay; that all [the Transposition and Docking] went fairly nominally, and the only different thing we've noticed is the SPS Thrust light on the EMS is now on.' | 003:36:25 Fullerton: 'Roger. I understand the SPS Thrust light is on.' | 003:36:28 Scott: 'And all the switches are off.' | 003:38:23 Fullerton: 'Apollo 15, Houston.' | 003:38:26 Scott: 'Go ahead.' | 003:38:44 Fullerton: 'We'd like you to pull [open] both SPS Pilot Valve circuit breakers on Panel 8.'",
-     "source_url": "https://www.apollojournals.org/afj/ap15fj/03tde.html",
-     "notes": "Crew-reported over the A/G loop right after transposition & docking. Fault report ends 003:36:28 (Scott, 'And all the switches are off'). Houston paused, called back up (003:38:23/26 handshake), then issued the first corrective/safing instruction at 003:38:44 (Fullerton: pull both SPS Pilot Valve CBs on Panel 8, so the short could not fire the engine). Turn count = every A/G transmission after the report through the corrective, inclusive = 3 (call-up, go-ahead, corrective); elapsed 136 s. NOTE: the definitive ROOT-CAUSE diagnosis (short in/very near the Delta-V Thrust A switch) was not stated until the next day, 025:43:48 (Allen); per the metric I used the earlier first-corrective-instruction. Source: NASA Apollo Flight Journal (apollojournals.org).",
-     "mission": "Apollo 15"
-    },
     {
      "symptom": "one of three main parachutes collapsed near 6000 feet, landed on two chutes",
      "crew_initiated": false,
@@ -1092,20 +1050,6 @@
    "mission": "Apollo 10"
   },
   {
-   "symptom": "1202 and 1201 program alarms during powered descent, rendezvous radar switch configuration",
-   "crew_initiated": true,
-   "found_exchange": true,
-   "get_report_end": "102:38:48",
-   "get_capcom_diagnosis": "102:38:53",
-   "human_time_s": 5,
-   "human_turns_to_diagnosis": 1,
-   "confidence": "high",
-   "exchange_quote": "102:38:26 CDR (Eagle): PROGRAM ALARM. / 102:38:30 CDR: It's a 1202. / 102:38:32 LMP: 1202. / 102:38:48 CDR: Give us a reading on the 1202 PROGRAM ALARM. / 102:38:53 CC (Duke): Roger. We got - We're GO on that alarm.",
-   "notes": "Crew-reported and located verbatim in both the NASA ALSJ landing page and the Technical Air-to-Ground Voice Transcription (GOSS NET 1). The crew's fault report culminates in Armstrong's request 'Give us a reading on the 1202 PROGRAM ALARM' (transmission timestamped 102:38:48); the very next air-to-ground transmission is CapCom Charlie Duke's diagnosis/clearance 'We're GO on that alarm' (102:38:53) = 1 exchange, ~5 s. (The MOCR-internal work by GUIDO Steve Bales/Jack Garman is not on the air-to-ground loop and is not counted.) The 1201 alarm was handled the same way and is corroborated: '102:42:19 LMP (Aldrin): PROGRAM ALARM ... 1201.' / '102:42:24 CC (Duke): Roger. 1201 alarm. We're GO. Same type. We're GO.' (~5 s, 1 turn). The rendezvous-radar switch mis-configuration as the ROOT CAUSE was determined postflight, not on the loop; the on-loop diagnosis was simply the GO-to-continue call.",
-   "source_url": "https://archive.org/download/Apollo11Audio/AS11_TEC_djvu.txt",
-   "mission": "Apollo 11"
-  },
-  {
    "symptom": "LM descent engine fuel line high pressure after landing, heat exchanger froze",
    "crew_initiated": false,
    "found_exchange": false,
@@ -1146,20 +1090,6 @@
    "notes": "Could NOT locate an O2-flow master alarm tied to LM SUIT-LOOP pressurization as described, so found_exchange=false is the honest answer. The only 'O2 FLOW HIGH' master alarms voiced by the crew in the air-to-ground transcript were in the COMMAND MODULE during CABIN repressurization on the coast phase, not the LM suit loop, e.g. at GET ~02:06:56 (54:56) CMP Collins: 'Can you hear our master alarm in the background? That's O2 FLOW HIGH coming through this amplifier.' and 'Houston, Apollo 11. As a matter of curiosity, our O2 flow meter is pegged FULL-SCALE HIGH.' Houston merely acknowledged ('Roger, 11. We copy that here.') then ran a valve-position correlation exercise; there was NO diagnosis/corrective instruction because the alarm was expected (they had opened the DIRECT O2 valve to pump up the cabin). A separate LM master alarm during suit-circuit setup at ~GET 108:29 was an ECS-caution/water-separator/suit-fan-breaker event, not an O2-flow-high alarm. Because the described suit-loop O2-flow alarm cannot be confirmed as a crew report with a matching CapCom diagnosis, crew_initiated=false and counts=-1; confidence low given the CM-vs-suit-loop mismatch.",
    "source_url": "https://archive.org/download/Apollo11Audio/AS11_TEC_djvu.txt",
    "mission": "Apollo 11"
-  },
-  {
-   "symptom": "lightning strike at launch, fuel cells dropped off the buses, inertial platform lost, telemetry garbled",
-   "crew_initiated": true,
-   "found_exchange": true,
-   "get_report_end": "000:01:12",
-   "get_capcom_diagnosis": "000:01:36",
-   "human_turns_to_diagnosis": 1,
-   "human_time_s": 24,
-   "confidence": "high",
-   "exchange_quote": "000:01:02 Conrad: Okay, we just lost the platform, gang. I don't know what happened here; we had everything in the world drop out. | 000:01:08 Carr: Roger. | 000:01:12 Conrad: I got three fuel cell lights, an AC bus light, a fuel cell disconnect, AC bus overload 1 and 2, Main Bus A and B out. [Long pause.] | 000:01:36 Carr: Apollo 12, Houston. Try SCE to Auxiliary. Over.",
-   "source_url": "https://www.apollojournals.org/afj/ap12fj/01launch_to_earth_orbit.html",
-   "notes": "The crew reported the electrical/platform failures over the air-to-ground loop during ascent. Their definitive fault report is Conrad's enumeration of warning lights at 000:01:12 (preceded by the platform-loss call at 000:01:02, which CapCom Carr acknowledged 'Roger' at 000:01:08). The first corrective instruction transmitted from the ground is CapCom Carr's 'Try SCE to Auxiliary' at 000:01:36 -- the very next air-to-ground transmission after the crew's report (only onboard-recorder chatter falls in between), hence 1 turn / 24 s. Note the actual diagnosis was made by EECOM John Aaron and relayed by CapCom Carr; the 'telemetry garbled' portion of the symptom was ground-detected (crew were unaware their downlink was scrambled). GET stamps mark the start of each transmission. High confidence: verbatim from the Apollo 12 Flight Journal launch chapter, corroborated by the Mission Report.",
-   "mission": "Apollo 12"
   },
   {
    "symptom": "RCS propellant and helium isolation valves closed at CSM to S-IVB separation from pyro shock",
@@ -1300,20 +1230,6 @@
    "notes": "Occurred during entry (~800 ft): main bus A did not de-energize when the bus-tie motor switches were opened; the buses were manually killed after landing by opening the inline circuit breakers (panel 275). Root cause \u2014 an inoperative motor switch tying battery A to main bus A \u2014 was a POSTFLIGHT finding. The AFJ reentry/splashdown transcript contains no real-time air-to-ground fault report or CapCom diagnosis of this; only an editorial annotation (near the 216-hour descent) noting the motor-switch failure. Any 'crew report' in the mission report is a postflight/debrief statement, not a loop transmission. crew_initiated=false (not reported on the loop), found_exchange=false; diagnosis was postflight. Source: AFJ ap14fj 34_day9_reentry_splashdown; Apollo 14 Mission Report.",
    "source_url": "https://apollojournals.org/afj/ap14fj/34_day9_reentry_splashdown.html",
    "mission": "Apollo 14"
-  },
-  {
-   "symptom": "SPS thrust light on the EMS lit with no fire command, short to ground in the delta-V thrust switch",
-   "crew_initiated": true,
-   "found_exchange": true,
-   "human_turns_to_diagnosis": 3,
-   "confidence": "high",
-   "get_report_end": "003:36:28",
-   "get_capcom_diagnosis": "003:38:44",
-   "human_time_s": 136,
-   "exchange_quote": "003:36:12 Scott: 'Okay; that all [the Transposition and Docking] went fairly nominally, and the only different thing we've noticed is the SPS Thrust light on the EMS is now on.' | 003:36:25 Fullerton: 'Roger. I understand the SPS Thrust light is on.' | 003:36:28 Scott: 'And all the switches are off.' | 003:38:23 Fullerton: 'Apollo 15, Houston.' | 003:38:26 Scott: 'Go ahead.' | 003:38:44 Fullerton: 'We'd like you to pull [open] both SPS Pilot Valve circuit breakers on Panel 8.'",
-   "source_url": "https://www.apollojournals.org/afj/ap15fj/03tde.html",
-   "notes": "Crew-reported over the A/G loop right after transposition & docking. Fault report ends 003:36:28 (Scott, 'And all the switches are off'). Houston paused, called back up (003:38:23/26 handshake), then issued the first corrective/safing instruction at 003:38:44 (Fullerton: pull both SPS Pilot Valve CBs on Panel 8, so the short could not fire the engine). Turn count = every A/G transmission after the report through the corrective, inclusive = 3 (call-up, go-ahead, corrective); elapsed 136 s. NOTE: the definitive ROOT-CAUSE diagnosis (short in/very near the Delta-V Thrust A switch) was not stated until the next day, 025:43:48 (Allen); per the metric I used the earlier first-corrective-instruction. Source: NASA Apollo Flight Journal (apollojournals.org).",
-   "mission": "Apollo 15"
   },
   {
    "symptom": "one of three main parachutes collapsed near 6000 feet, landed on two chutes",

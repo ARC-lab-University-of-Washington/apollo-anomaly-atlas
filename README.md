@@ -37,6 +37,9 @@ The atlas is **system-agnostic**. No GPU, no model, no special hardware. Bring y
 | ├─ in-corpus — the accuracy set | **107** | `crew_observed AND in_corpus` |
 | └─ out-of-corpus — the coverage set | **39** | `crew_observed AND NOT in_corpus` |
 | Identified post-flight | 109 | no symptom report; not scored |
+| Live-loop — latency and power | **23** | `crew_observed AND diagnosed_in_flight` |
+| Timestamped — time-to-diagnosis | **18** | documented timestamp span: 7 of the 23 + 11 cross-mission |
+| Turn-verified — turn-to-diagnosis | **15** | transcript-verified Mission Control turn count: 6 of the 23 + 9 cross-mission |
 
 Report every number with its set. Accuracy is on the 107. Coverage AUC is over the 146, with `in_corpus` as the positive label. A single figure quoted over all 255 is not comparable to anything.
 
@@ -98,9 +101,10 @@ scripts/
   score_subsystem.py            subsystem scoring
 baselines/
   decisions_146_k8.jsonl        the 146 scored decisions behind the paper
-  coverage_roc_146.csv          the ROC behind AUC 0.75
+  coverage_roc_146.csv          the ROC behind AUC 0.73
   coverage_in_out_summary.csv   in/out coverage distributions
   corpus_composition.csv        3,370 → 3,148 accounting
+  mt_subsystem_loop23.jsonl     dev-box multi-turn run on the 23 live-loop anomalies
   crossmission_lodestar*.jsonl  dev-box and Jetson runs
 ```
 
@@ -109,7 +113,7 @@ baselines/
 - **Ground truth is the post-flight established cause**, sometimes revised months after the mission. `confidence` marks how firm each one is.
 - **Symptom reports are verbatim**, disfluencies and transcription uncertainty included. Cleaning them would make the task easier than the real one.
 - **Segment metadata is OCR-derived and was never hand-verified.** Coverage is partial — component ~40%, signature ~59%, symptoms ~16%. `ocr_confidence` ships beside every segment. Treat these as retrieval aids, not ground truth.
-- **The head-to-head comparison spans two files.** Only 6 of the 18 turn-verified anomalies carry turn counts inside `atlas_parsed.json`; the rest come from `data/crossmission_*`. Use both.
+- **The head-to-head comparison spans two files.** Only 6 of the 15 turn-verified anomalies carry turn counts inside `atlas_parsed.json`; the rest come from `data/crossmission_*`. Use both.
 - **Apollo-era systems are not Artemis-era systems.** This measures diagnostic reasoning over documented procedure, not transfer to current vehicles.
 
 ## Source documents

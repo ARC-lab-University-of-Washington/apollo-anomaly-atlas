@@ -243,19 +243,6 @@
  ],
  "Apollo 11": [
   {
-   "symptom": "1202 and 1201 program alarms during powered descent, rendezvous radar switch configuration",
-   "subsystem": "GNC-PGNS",
-   "documented_cause": "Executive overflow (program) alarms were caused by the guidance computer being unable to complete all scheduled data processing in a computation cycle. More than 10-15% of computer capacity was preempted by spurious counter interrupts from ",
-   "component_terms": [
-    "rendezvous radar",
-    "coupling data unit",
-    "rendezvous radar mode switch",
-    "guidance computer (LGC)",
-    "attitude and translation control assembly",
-    "shaft and trunnion resolvers"
-   ]
-  },
-  {
    "symptom": "LM descent engine fuel line high pressure after landing, heat exchanger froze",
    "subsystem": "LM-DPS",
    "documented_cause": "During simultaneous venting of the descent propellant and supercritical helium tanks, fuel in the fuel/helium heat exchanger was frozen by the cold helium flowing through the heat exchanger. Subsequent heat soakback from the descent engine ",
@@ -296,19 +283,6 @@
   }
  ],
  "Apollo 12": [
-  {
-   "symptom": "lightning strike at launch, fuel cells dropped off the buses, inertial platform lost, telemetry garbled",
-   "subsystem": "EPS",
-   "documented_cause": "Two lightning discharges were triggered by the vehicle passing through electric fields (36.5 s cloud-to-earth through the vehicle; 52 s cloud-to-cloud). At the first discharge, the voltage transient induced on the battery relay bus exceeded",
-   "component_terms": [
-    "fuel cell",
-    "main bus",
-    "signal conditioning equipment",
-    "inertial platform",
-    "coupling display unit",
-    "silicon controlled rectifier (fuel cell overload sensor)"
-   ]
-  },
   {
    "symptom": "RCS propellant and helium isolation valves closed at CSM to S-IVB separation from pyro shock",
    "subsystem": "RCS",
@@ -442,19 +416,6 @@
   }
  ],
  "Apollo 15": [
-  {
-   "symptom": "SPS thrust light on the EMS lit with no fire command, short to ground in the delta-V thrust switch",
-   "subsystem": "SPS",
-   "documented_cause": "The SPS thrust light on the EMS came on without a fire command because the system A delta-V thrust switch was intermittently shorted to ground. The short path was created by a loose wire strand (about 0.055 inch long) lying on the flange of",
-   "component_terms": [
-    "service propulsion system",
-    "entry monitor system",
-    "delta-V thrust switch",
-    "SPS thrust light",
-    "system A",
-    "feed-through terminal"
-   ]
-  },
   {
    "symptom": "one of three main parachutes collapsed near 6000 feet, landed on two chutes",
    "subsystem": "structures-parachute",
