@@ -2,7 +2,7 @@
 
 # The Apollo Anomaly Atlas
 
-**255 documented in-flight anomalies from the 11 crewed Apollo missions** — with the crew's own words, the cause established after the fact, and the corpus they were diagnosed against.
+**A parsed collection of 255 documented in-flight anomalies from the 11 crewed Apollo missions for simulation of in-flight faults**
 
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.22713950-1f6feb?style=flat-square)](https://doi.org/10.5281/zenodo.22713950)
 [![Data](https://img.shields.io/badge/data-CC%20BY%204.0-2a78d6?style=flat-square)](LICENSE)
@@ -17,7 +17,7 @@
 
 ## What this is
 
-A benchmark for **onboard fault diagnosis**. Every entry is a fault that actually happened on a crewed Apollo mission, paired with what the crew said at the time and what the cause turned out to be after the flight.
+A benchmark for **onboard fault diagnosis**. Every entry is a fault on the crewed Apollo mission record, paired with crew transcripts and post-mission diagnosis.
 
 Systems are scored by **transcript replay**: show the assistant the crew's verbatim words, one utterance at a time, and ask for the cause — with the post-flight record withheld. You cannot introduce real faults in orbit to validate a diagnostic assistant. This is the alternative.
 
